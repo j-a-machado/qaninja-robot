@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9124842c-bcb7-42ee-9633-5f5ad751b892" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/qaninja-robot.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Examples" beforeDir="false" afterPath="$PROJECT_DIR$/../Examples" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jornaldosbairros-ml" beforeDir="false" afterPath="$PROJECT_DIR$/../jornaldosbairros-ml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../maiconsantos" beforeDir="false" afterPath="$PROJECT_DIR$/../maiconsantos" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +99,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -127,19 +124,22 @@
       <option name="presentableId" value="Default" />
       <updated>1632700229402</updated>
       <workItem from="1632700231052" duration="894000" />
-      <workItem from="1632703990523" duration="426000" />
+      <workItem from="1632703990523" duration="866000" />
+      <workItem from="1632705606659" duration="541000" />
+      <workItem from="1632706333884" duration="442000" />
+      <workItem from="1632707234802" duration="249000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3113000" />
+    <option name="totallyTimeSpent" value="4785000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1366" height="745" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4977169" visible="true" weight="0.25377643" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4985755" visible="true" weight="0.26510575" />
       <window_info id="Structure" order="1" sideWeight="0.5022831" side_tool="true" weight="0.25377643" />
-      <window_info active="true" id="Favorites" order="2" sideWeight="0.5022831" side_tool="true" visible="true" weight="0.25377643" />
+      <window_info id="Favorites" order="2" sideWeight="0.5014245" side_tool="true" weight="0.25377643" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -149,8 +149,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32924962" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.24961714" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32924962" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.46248084" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
