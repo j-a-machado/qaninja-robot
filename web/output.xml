@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on darwin)" generated="20210927 23:14:49.769" rpa="false" schemaversion="2">
+<suite id="s1" name="Title" source="/Users/julianaantunesmachado/GitHub/qaninja-robot/web/title.robot">
+<test id="s1-t1" name="Should valid page title">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://training-wheels-protocol.herokuapp.com</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210927 23:14:50.161" level="INFO">Opening browser 'firefox' to base url 'https://training-wheels-protocol.herokuapp.com'.</msg>
+<msg timestamp="20210927 23:14:50.164" level="INFO">Firefox driver log is always forced to to: /Users/julianaantunesmachado/GitHub/qaninja-robot/web/geckodriver-1.log</msg>
+<status status="PASS" starttime="20210927 23:14:50.160" endtime="20210927 23:15:07.609"/>
+</kw>
+<status status="PASS" starttime="20210927 23:14:50.159" endtime="20210927 23:15:07.613"/>
+</test>
+<status status="PASS" starttime="20210927 23:14:49.774" endtime="20210927 23:15:07.627"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Title">Title</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
