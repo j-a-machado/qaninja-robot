@@ -1,168 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.1 (Python 3.9.7 on darwin)" generated="20211005 20:54:14.017" rpa="false" schemaversion="2">
-<suite id="s1" name="Title" source="/Users/julianaantunesmachado/GitHub/qaninja-robot/web/tests/title.robot">
-<test id="s1-t1" name="Should valid page title">
+<robot generator="Robot 4.1.1 (Python 3.9.7 on darwin)" generated="20211006 21:31:23.083" rpa="false" schemaversion="2">
+<suite id="s1" name="Radio" source="/Users/julianaantunesmachado/GitHub/qaninja-robot/web/tests/radio.robot">
+<test id="s1-t1" name="Radio button with id">
 <kw name="Open Session" library="base" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>firefox</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211005 20:54:14.393" level="INFO">Opening browser 'firefox' to base url 'https://training-wheels-protocol.herokuapp.com'.</msg>
-<msg timestamp="20211005 20:54:14.395" level="INFO">Firefox driver log is always forced to to: /Users/julianaantunesmachado/GitHub/qaninja-robot/web/tests/log/geckodriver-1.log</msg>
-<status status="PASS" starttime="20211005 20:54:14.393" endtime="20211005 20:54:22.350"/>
+<msg timestamp="20211006 21:31:23.410" level="INFO">Opening browser 'firefox' to base url 'https://training-wheels-protocol.herokuapp.com'.</msg>
+<msg timestamp="20211006 21:31:23.412" level="INFO">Firefox driver log is always forced to to: /Users/julianaantunesmachado/GitHub/qaninja-robot/web/tests/log/geckodriver-13.log</msg>
+<status status="PASS" starttime="20211006 21:31:23.410" endtime="20211006 21:31:36.439"/>
 </kw>
-<status status="PASS" starttime="20211005 20:54:14.392" endtime="20211005 20:54:22.351"/>
-</kw>
-<kw name="Title Should Be" library="SeleniumLibrary">
-<arg>Training Wheels Protocol</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211005 20:54:22.366" level="INFO">Page title is 'Training Wheels Protocol'.</msg>
-<status status="PASS" starttime="20211005 20:54:22.352" endtime="20211005 20:54:22.366"/>
-</kw>
-<kw name="Close Session" library="base" type="TEARDOWN">
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20211005 20:54:22.368" endtime="20211005 20:54:23.197"/>
-</kw>
-<status status="PASS" starttime="20211005 20:54:22.367" endtime="20211005 20:54:23.198"/>
-</kw>
-<status status="PASS" starttime="20211005 20:54:14.390" endtime="20211005 20:54:23.198"/>
-</test>
-<test id="s1-t2" name="Check option with id">
-<kw name="Open Session" library="base" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url}</arg>
-<arg>firefox</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211005 20:54:23.203" level="INFO">Opening browser 'firefox' to base url 'https://training-wheels-protocol.herokuapp.com'.</msg>
-<msg timestamp="20211005 20:54:23.204" level="INFO">Firefox driver log is always forced to to: /Users/julianaantunesmachado/GitHub/qaninja-robot/web/tests/log/geckodriver-2.log</msg>
-<status status="PASS" starttime="20211005 20:54:23.203" endtime="20211005 20:54:31.360"/>
-</kw>
-<status status="PASS" starttime="20211005 20:54:23.202" endtime="20211005 20:54:31.361"/>
+<status status="PASS" starttime="20211006 21:31:23.409" endtime="20211006 21:31:36.439"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
-<arg>${url}/checkboxes</arg>
+<arg>${url}/radios</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20211005 20:54:31.362" level="INFO">Opening url 'https://training-wheels-protocol.herokuapp.com/checkboxes'</msg>
-<status status="PASS" starttime="20211005 20:54:31.361" endtime="20211005 20:54:31.780"/>
+<msg timestamp="20211006 21:31:36.441" level="INFO">Opening url 'https://training-wheels-protocol.herokuapp.com/radios'</msg>
+<status status="PASS" starttime="20211006 21:31:36.440" endtime="20211006 21:31:37.042"/>
 </kw>
-<kw name="Select Checkbox" library="SeleniumLibrary">
-<arg>${with_id}</arg>
-<doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20211005 20:54:31.782" level="INFO">Selecting checkbox 'id:thor'.</msg>
-<status status="PASS" starttime="20211005 20:54:31.781" endtime="20211005 20:54:32.071"/>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>movies</arg>
+<arg>cap</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20211006 21:31:37.043" level="INFO">Selecting 'cap' from radio button 'movies'.</msg>
+<status status="PASS" starttime="20211006 21:31:37.043" endtime="20211006 21:31:37.302"/>
 </kw>
-<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
-<arg>${with_id}</arg>
-<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<msg timestamp="20211005 20:54:32.072" level="INFO">Verifying checkbox 'id:thor' is selected.</msg>
-<status status="PASS" starttime="20211005 20:54:32.071" endtime="20211005 20:54:32.101"/>
-</kw>
-<kw name="Close Session" library="base" type="TEARDOWN">
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20211005 20:54:32.103" endtime="20211005 20:54:32.908"/>
-</kw>
-<status status="PASS" starttime="20211005 20:54:32.102" endtime="20211005 20:54:32.908"/>
-</kw>
-<status status="PASS" starttime="20211005 20:54:23.200" endtime="20211005 20:54:32.908"/>
-</test>
-<test id="s1-t3" name="Check option with css">
-<kw name="Open Session" library="base" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url}</arg>
-<arg>firefox</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211005 20:54:32.911" level="INFO">Opening browser 'firefox' to base url 'https://training-wheels-protocol.herokuapp.com'.</msg>
-<msg timestamp="20211005 20:54:32.912" level="INFO">Firefox driver log is always forced to to: /Users/julianaantunesmachado/GitHub/qaninja-robot/web/tests/log/geckodriver-3.log</msg>
-<status status="PASS" starttime="20211005 20:54:32.911" endtime="20211005 20:54:42.432"/>
-</kw>
-<status status="PASS" starttime="20211005 20:54:32.910" endtime="20211005 20:54:42.432"/>
-</kw>
-<kw name="Go To" library="SeleniumLibrary">
-<arg>${url}/checkboxes</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20211005 20:54:42.433" level="INFO">Opening url 'https://training-wheels-protocol.herokuapp.com/checkboxes'</msg>
-<status status="PASS" starttime="20211005 20:54:42.433" endtime="20211005 20:54:42.993"/>
-</kw>
-<kw name="Select Checkbox" library="SeleniumLibrary">
-<arg>${with_css}</arg>
-<doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20211005 20:54:42.994" level="INFO">Selecting checkbox 'css:input[value='iron-man']'.</msg>
-<status status="PASS" starttime="20211005 20:54:42.993" endtime="20211005 20:54:43.266"/>
-</kw>
-<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
-<arg>${with_css}</arg>
-<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<msg timestamp="20211005 20:54:43.268" level="INFO">Verifying checkbox 'css:input[value='iron-man']' is selected.</msg>
-<status status="PASS" starttime="20211005 20:54:43.267" endtime="20211005 20:54:43.297"/>
-</kw>
-<kw name="Close Session" library="base" type="TEARDOWN">
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20211005 20:54:43.300" endtime="20211005 20:54:44.075"/>
-</kw>
-<status status="PASS" starttime="20211005 20:54:43.299" endtime="20211005 20:54:44.075"/>
-</kw>
-<status status="PASS" starttime="20211005 20:54:32.909" endtime="20211005 20:54:44.075"/>
-</test>
-<test id="s1-t4" name="Check option with Xpath">
-<kw name="Open Session" library="base" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url}</arg>
-<arg>firefox</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211005 20:54:44.079" level="INFO">Opening browser 'firefox' to base url 'https://training-wheels-protocol.herokuapp.com'.</msg>
-<msg timestamp="20211005 20:54:44.080" level="INFO">Firefox driver log is always forced to to: /Users/julianaantunesmachado/GitHub/qaninja-robot/web/tests/log/geckodriver-4.log</msg>
-<status status="PASS" starttime="20211005 20:54:44.078" endtime="20211005 20:54:56.061"/>
-</kw>
-<status status="PASS" starttime="20211005 20:54:44.077" endtime="20211005 20:54:56.061"/>
-</kw>
-<kw name="Go To" library="SeleniumLibrary">
-<arg>${url}/checkboxes</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20211005 20:54:56.064" level="INFO">Opening url 'https://training-wheels-protocol.herokuapp.com/checkboxes'</msg>
-<status status="PASS" starttime="20211005 20:54:56.062" endtime="20211005 20:54:56.435"/>
-</kw>
-<kw name="Select Checkbox" library="SeleniumLibrary">
-<arg>${with_xpath}</arg>
-<doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20211005 20:54:56.437" level="INFO">Selecting checkbox 'xpath://*[@id='checkboxes']/input[7]'.</msg>
-<status status="PASS" starttime="20211005 20:54:56.436" endtime="20211005 20:54:56.716"/>
-</kw>
-<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
-<arg>${with_xpath}</arg>
-<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<msg timestamp="20211005 20:54:56.717" level="INFO">Verifying checkbox 'xpath://*[@id='checkboxes']/input[7]' is selected.</msg>
-<status status="PASS" starttime="20211005 20:54:56.716" endtime="20211005 20:54:56.743"/>
+<kw name="Radio Button Should Be Set To" library="SeleniumLibrary">
+<arg>movies</arg>
+<arg>cap</arg>
+<doc>Verifies radio button group ``group_name`` is set to ``value``.</doc>
+<msg timestamp="20211006 21:31:37.304" level="INFO">Verifying radio button 'movies' has selection 'cap'.</msg>
+<status status="PASS" starttime="20211006 21:31:37.303" endtime="20211006 21:31:37.337"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211005 20:55:01.746" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20211005 20:54:56.743" endtime="20211005 20:55:01.747"/>
+<msg timestamp="20211006 21:31:42.339" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211006 21:31:37.338" endtime="20211006 21:31:42.340"/>
 </kw>
 <kw name="Close Session" library="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211006 21:31:42.581" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211006 21:31:42.342" endtime="20211006 21:31:42.581"/>
+</kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20211005 20:55:01.749" endtime="20211005 20:55:02.561"/>
+<status status="PASS" starttime="20211006 21:31:42.581" endtime="20211006 21:31:43.489"/>
 </kw>
-<status status="PASS" starttime="20211005 20:55:01.748" endtime="20211005 20:55:02.562"/>
+<status status="PASS" starttime="20211006 21:31:42.341" endtime="20211006 21:31:43.489"/>
 </kw>
-<tag>checkbox</tag>
-<status status="PASS" starttime="20211005 20:54:44.076" endtime="20211005 20:55:02.562"/>
+<tag>radio</tag>
+<status status="PASS" starttime="20211006 21:31:23.408" endtime="20211006 21:31:43.490"/>
 </test>
-<status status="PASS" starttime="20211005 20:54:14.019" endtime="20211005 20:55:02.565"/>
+<status status="PASS" starttime="20211006 21:31:23.085" endtime="20211006 21:31:43.493"/>
 </suite>
 <statistics>
 <total>
-<stat pass="4" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">checkbox</stat>
+<stat pass="1" fail="0" skip="0">radio</stat>
 </tag>
 <suite>
-<stat pass="4" fail="0" skip="0" id="s1" name="Title">Title</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Radio">Radio</stat>
 </suite>
 </statistics>
 <errors>
