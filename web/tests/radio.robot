@@ -13,18 +13,13 @@ Radio button with id
     [tags]      radio
     Go To                           ${url}/radios
     Select Radio button             movies              cap 
-    Radio Button Should Be Set To    movies              cap
+    Radio Button Should Be Set To   movies              cap
     Sleep                           5 
-    
-Check option with css
-    Go To                           ${url}/checkboxes
-    Select Checkbox                 ${with_css}
-    Checkbox Should Be Selected     ${with_css}     
-    
-Check option with Xpath
-    [tags]      checkbox
-    Go To                           ${url}/checkboxes
-    Select Checkbox                 ${with_xpath}
-    Checkbox Should Be Selected     ${with_xpath}    
+
+Radio button with value
+    [tags]      radio
+    Go To                           ${url}/radios
+    Select Radio button             movies              guardians 
+    Radio Button Should Be Set To   movies              guardians
     Sleep                           5 
     
