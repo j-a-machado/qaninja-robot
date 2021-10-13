@@ -2,11 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9124842c-bcb7-42ee-9633-5f5ad751b892" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Examples" beforeDir="false" afterPath="$PROJECT_DIR$/../Examples" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jornaldosbairros-ml" beforeDir="false" afterPath="$PROJECT_DIR$/../jornaldosbairros-ml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../maiconsantos" beforeDir="false" afterPath="$PROJECT_DIR$/../maiconsantos" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/log/geckodriver-1.log" beforeDir="false" afterPath="$PROJECT_DIR$/web/log/geckodriver-1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/log/geckodriver-2.log" beforeDir="false" afterPath="$PROJECT_DIR$/web/log/geckodriver-2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/log/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/log/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/log/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/log/output.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/log/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/log/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/tests/base.robot" beforeDir="false" afterPath="$PROJECT_DIR$/web/tests/base.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/tests/log/geckodriver-1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/tests/log/geckodriver-2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/tests/log/log.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/tests/log/output.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/tests/log/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/tests/log/selenium-screenshot-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/tests/log/selenium-screenshot-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/tests/log/selenium-screenshot-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/tests/log/selenium-screenshot-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/tests/log/selenium-screenshot-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/tests/log/selenium-screenshot-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/tests/log/selenium-screenshot-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/tests/log/selenium-screenshot-8.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,6 +80,7 @@
       <list>
         <option value="$PROJECT_DIR$/teste.html" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/maicon.html" />
       </list>
     </option>
   </component>
@@ -78,6 +97,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -89,7 +109,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -128,16 +147,18 @@
       <workItem from="1632705606659" duration="541000" />
       <workItem from="1632706333884" duration="442000" />
       <workItem from="1632707234802" duration="249000" />
+      <workItem from="1634164471482" duration="386000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4785000" />
+    <option name="totallyTimeSpent" value="5171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1366" height="745" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4985755" visible="true" weight="0.26510575" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4985755" visible="true" weight="0.2688822" />
       <window_info id="Structure" order="1" sideWeight="0.5022831" side_tool="true" weight="0.25377643" />
       <window_info id="Favorites" order="2" sideWeight="0.5014245" side_tool="true" weight="0.25377643" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -150,7 +171,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32924962" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.46248084" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.46248084" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -232,6 +253,19 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/teste.html" />
+    <entry file="file://$PROJECT_DIR$/maicon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="110" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="110" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">

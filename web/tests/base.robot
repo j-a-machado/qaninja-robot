@@ -9,5 +9,6 @@ Open Session
     Open browser        ${url}                          firefox
 
 Close Session
+    Sleep                       2
     Capture Page Screenshot
     Close browser
