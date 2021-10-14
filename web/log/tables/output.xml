@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on darwin)" generated="20211013 21:03:40.660" rpa="false" schemaversion="2">
+<suite id="s1" name="Tables" source="/Users/julianaantunesmachado/GitHub/qaninja-robot/web/tests/tables.robot">
+<test id="s1-t1" name="Check value with the line number">
+<kw name="Open Session" library="base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211013 21:03:41.067" level="INFO">Opening browser 'firefox' to base url 'https://training-wheels-protocol.herokuapp.com'.</msg>
+<msg timestamp="20211013 21:03:41.070" level="INFO">Firefox driver log is always forced to to: /Users/julianaantunesmachado/GitHub/qaninja-robot/web/log/tables/geckodriver-3.log</msg>
+<status status="PASS" starttime="20211013 21:03:41.066" endtime="20211013 21:03:55.008"/>
+</kw>
+<status status="PASS" starttime="20211013 21:03:41.066" endtime="20211013 21:03:55.009"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}/tables</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211013 21:03:55.011" level="INFO">Opening url 'https://training-wheels-protocol.herokuapp.com/tables'</msg>
+<status status="PASS" starttime="20211013 21:03:55.010" endtime="20211013 21:03:55.473"/>
+</kw>
+<kw name="Table Row Should Contain" library="SeleniumLibrary">
+<arg>id:actors</arg>
+<arg>2</arg>
+<arg>@vindiesel</arg>
+<doc>Verifies that table row contains text ``expected``.</doc>
+<status status="PASS" starttime="20211013 21:03:55.474" endtime="20211013 21:03:55.592"/>
+</kw>
+<kw name="Close Session" library="base" type="TEARDOWN">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211013 21:03:57.595" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211013 21:03:55.594" endtime="20211013 21:03:57.596"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211013 21:03:57.835" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211013 21:03:57.596" endtime="20211013 21:03:57.835"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211013 21:03:57.835" endtime="20211013 21:03:58.800"/>
+</kw>
+<status status="PASS" starttime="20211013 21:03:55.593" endtime="20211013 21:03:58.800"/>
+</kw>
+<status status="PASS" starttime="20211013 21:03:41.065" endtime="20211013 21:03:58.801"/>
+</test>
+<test id="s1-t2" name="Check value discovering the line number">
+<kw name="Open Session" library="base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211013 21:03:58.806" level="INFO">Opening browser 'firefox' to base url 'https://training-wheels-protocol.herokuapp.com'.</msg>
+<msg timestamp="20211013 21:03:58.807" level="INFO">Firefox driver log is always forced to to: /Users/julianaantunesmachado/GitHub/qaninja-robot/web/log/tables/geckodriver-4.log</msg>
+<status status="PASS" starttime="20211013 21:03:58.805" endtime="20211013 21:04:08.561"/>
+</kw>
+<status status="PASS" starttime="20211013 21:03:58.804" endtime="20211013 21:04:08.562"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}/tables</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211013 21:04:08.565" level="INFO">Opening url 'https://training-wheels-protocol.herokuapp.com/tables'</msg>
+<status status="PASS" starttime="20211013 21:04:08.564" endtime="20211013 21:04:08.964"/>
+</kw>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${target}</var>
+<arg>xpath:.//tr[contains(., '@chadwickboseman')]</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<msg timestamp="20211013 21:04:08.993" level="INFO">${target} = &lt;selenium.webdriver.firefox.webelement.FirefoxWebElement (session="f10135da-c9ae-9345-b1e9-23ac9ebc1dff", element="589d0ce3-e6ab-9b49-8cd9-df27db9843eb")&gt;</msg>
+<status status="PASS" starttime="20211013 21:04:08.965" endtime="20211013 21:04:08.993"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${target.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211013 21:04:09.043" level="INFO">Chadwick Boseman Pantera Negra Vingadores $ 700.000 @chadwickboseman edit delete</msg>
+<status status="PASS" starttime="20211013 21:04:08.994" endtime="20211013 21:04:09.043"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${target.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211013 21:04:09.044" endtime="20211013 21:04:09.070"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${target.text}</arg>
+<arg>$ 700.000</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20211013 21:04:09.071" endtime="20211013 21:04:09.104"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${target.text}</arg>
+<arg>Pantera Negra</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20211013 21:04:09.105" endtime="20211013 21:04:09.132"/>
+</kw>
+<kw name="Close Session" library="base" type="TEARDOWN">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211013 21:04:11.136" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211013 21:04:09.134" endtime="20211013 21:04:11.136"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211013 21:04:11.338" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211013 21:04:11.136" endtime="20211013 21:04:11.339"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211013 21:04:11.339" endtime="20211013 21:04:12.282"/>
+</kw>
+<status status="PASS" starttime="20211013 21:04:09.132" endtime="20211013 21:04:12.282"/>
+</kw>
+<status status="PASS" starttime="20211013 21:03:58.802" endtime="20211013 21:04:12.283"/>
+</test>
+<status status="PASS" starttime="20211013 21:03:40.664" endtime="20211013 21:04:12.285"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Tables">Tables</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
