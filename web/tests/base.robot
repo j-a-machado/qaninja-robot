@@ -6,7 +6,8 @@ ${url}              https://training-wheels-protocol.herokuapp.com
 
 ***Keywords***
 Open Session
-    Open browser        ${url}                          firefox
+    Open browser                ${url}                          firefox
+    Sleep                       2
 
 Close Session
     Sleep                       2

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on darwin)" generated="20211016 22:00:06.131" rpa="false" schemaversion="2">
+<suite id="s1" name="Login Form" source="/Users/julianaantunesmachado/GitHub/qaninja-robot/web/tests/login_form.robot">
+<test id="s1-t1" name="Login Successfully">
+<kw name="Open Session" library="base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211016 22:00:06.477" level="INFO">Opening browser 'firefox' to base url 'https://training-wheels-protocol.herokuapp.com'.</msg>
+<msg timestamp="20211016 22:00:06.481" level="INFO">Firefox driver log is always forced to to: /Users/julianaantunesmachado/GitHub/qaninja-robot/web/log/login/geckodriver-2.log</msg>
+<status status="PASS" starttime="20211016 22:00:06.477" endtime="20211016 22:00:25.190"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211016 22:00:27.193" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211016 22:00:25.192" endtime="20211016 22:00:27.194"/>
+</kw>
+<status status="PASS" starttime="20211016 22:00:06.476" endtime="20211016 22:00:27.195"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}/login</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211016 22:00:27.196" level="INFO">Opening url 'https://training-wheels-protocol.herokuapp.com/login'</msg>
+<status status="PASS" starttime="20211016 22:00:27.196" endtime="20211016 22:00:28.302"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:input[name=username]</arg>
+<arg>stark</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211016 22:00:28.304" level="INFO">Typing text 'stark' into text field 'css:input[name=username]'.</msg>
+<status status="PASS" starttime="20211016 22:00:28.303" endtime="20211016 22:00:28.391"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:input[name=password]</arg>
+<arg>jarvis!</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211016 22:00:28.392" level="INFO">Typing text 'jarvis!' into text field 'css:input[name=password]'.</msg>
+<status status="PASS" starttime="20211016 22:00:28.392" endtime="20211016 22:00:28.427"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class:btn-login</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211016 22:00:28.429" level="INFO">Clicking element 'class:btn-login'.</msg>
+<status status="PASS" starttime="20211016 22:00:28.428" endtime="20211016 22:00:29.010"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Área Logada</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20211016 22:00:29.037" level="INFO">Current page contains text 'Área Logada'.</msg>
+<status status="PASS" starttime="20211016 22:00:29.011" endtime="20211016 22:00:29.037"/>
+</kw>
+<kw name="Close Session" library="base" type="TEARDOWN">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211016 22:00:31.042" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211016 22:00:29.039" endtime="20211016 22:00:31.042"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211016 22:00:31.243" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211016 22:00:31.043" endtime="20211016 22:00:31.243"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211016 22:00:31.243" endtime="20211016 22:00:32.068"/>
+</kw>
+<status status="PASS" starttime="20211016 22:00:29.038" endtime="20211016 22:00:32.068"/>
+</kw>
+<status status="PASS" starttime="20211016 22:00:06.475" endtime="20211016 22:00:32.069"/>
+</test>
+<status status="PASS" starttime="20211016 22:00:06.133" endtime="20211016 22:00:32.071"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Login Form">Login Form</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
