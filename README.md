@@ -12,14 +12,14 @@ The course used the [Training Wheels Protocol](https://training-wheels-protocol.
 * How to prepare the development environment, with Robot Framework, Selenium Library and Python3.
 * How to organize the files (tests and logs).
 * How to do tests with:
-** Checkbox;
-** Radio buttons;
-** Combobox;
-** Tables;
-** Forms;
-** Notifications;
-** Variables;
-** Keywords;
+    * Checkbox;
+    * Radio buttons;
+    * Combobox;
+    * Tables;
+    * Forms;
+    * Notifications;
+    * Variables;
+    * Keywords;
 * How to take screenshots to produce test evidence.
 * How to _read/understand_ a log file.
 * How to deal with fail tests.
@@ -54,6 +54,7 @@ If you want to know if this project still working, here is the steps to use it.
 7. You can use the following command to make a test:
 
 `cd web/tests`
+
 `robot -d log login_form.robot`
 
 ## Notes
