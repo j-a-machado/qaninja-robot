@@ -1,13 +1,13 @@
-1634169688296	geckodriver	INFO	Listening on 127.0.0.1:53803
-1634169689223	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/rp/fxgn8gls6_7_j6q36phn5fz80000gn/T/rust_mozprofilezuLqw7"
-1634169689804	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/rp/fxgn8gls6_7_j6q36phn5fz80000gn/T/rust_mozprofilezuLqw7/search.json.mozlz4", (void 0)))
+1634435135012	geckodriver	INFO	Listening on 127.0.0.1:61207
+1634435135640	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/rp/fxgn8gls6_7_j6q36phn5fz80000gn/T/rust_mozprofileX0Nfi2"
+1634435136931	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/rp/fxgn8gls6_7_j6q36phn5fz80000gn/T/rust_mozprofileX0Nfi2/search.json.mozlz4", (void 0)))
 console.error: BackgroundUpdate: 
   _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
-1634169692502	Marionette	INFO	Listening on port 53810
-1634169692537	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-1634169701594	Marionette	INFO	Stopped listening on port 53810
-JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1634435139838	Marionette	INFO	Listening on port 61214
+1634435139874	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1634435153066	Marionette	INFO	Stopped listening on port 61214
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 

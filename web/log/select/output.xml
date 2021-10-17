@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on darwin)" generated="20211016 22:46:41.209" rpa="false" schemaversion="2">
+<suite id="s1" name="Select" source="/Users/julianaantunesmachado/GitHub/qaninja-robot/web/tests/select.robot">
+<test id="s1-t1" name="Select option by text and validate by value">
+<kw name="Open Session" library="base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211016 22:46:41.567" level="INFO">Opening browser 'firefox' to base url 'https://training-wheels-protocol.herokuapp.com'.</msg>
+<msg timestamp="20211016 22:46:41.570" level="INFO">Firefox driver log is always forced to to: /Users/julianaantunesmachado/GitHub/qaninja-robot/web/log/select/geckodriver-1.log</msg>
+<status status="PASS" starttime="20211016 22:46:41.566" endtime="20211016 22:46:52.363"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211016 22:46:54.366" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211016 22:46:52.364" endtime="20211016 22:46:54.366"/>
+</kw>
+<status status="PASS" starttime="20211016 22:46:41.566" endtime="20211016 22:46:54.367"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}/dropdown</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211016 22:46:54.369" level="INFO">Opening url 'https://training-wheels-protocol.herokuapp.com/dropdown'</msg>
+<status status="PASS" starttime="20211016 22:46:54.368" endtime="20211016 22:46:54.752"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>class:avenger-list</arg>
+<arg>Scott Lang</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20211016 22:46:54.753" level="INFO">Selecting options from selection list 'class:avenger-list' by label Scott Lang.</msg>
+<status status="PASS" starttime="20211016 22:46:54.752" endtime="20211016 22:46:55.128"/>
+</kw>
+<kw name="Get Selected List Value" library="SeleniumLibrary">
+<var>${option-selected}</var>
+<arg>class:avenger-list</arg>
+<doc>Returns the value of selected option from selection list ``locator``.</doc>
+<msg timestamp="20211016 22:46:55.205" level="INFO">${option-selected} = 7</msg>
+<status status="PASS" starttime="20211016 22:46:55.129" endtime="20211016 22:46:55.205"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${option-selected}</arg>
+<arg>7</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20211016 22:46:55.206" endtime="20211016 22:46:55.206"/>
+</kw>
+<kw name="Close Session" library="base" type="TEARDOWN">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211016 22:46:57.210" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211016 22:46:55.207" endtime="20211016 22:46:57.211"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211016 22:46:57.388" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211016 22:46:57.211" endtime="20211016 22:46:57.388"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211016 22:46:57.389" endtime="20211016 22:46:58.204"/>
+</kw>
+<status status="PASS" starttime="20211016 22:46:55.207" endtime="20211016 22:46:58.205"/>
+</kw>
+<status status="PASS" starttime="20211016 22:46:41.565" endtime="20211016 22:46:58.205"/>
+</test>
+<test id="s1-t2" name="Select option by value and validate by text">
+<kw name="Open Session" library="base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211016 22:46:58.209" level="INFO">Opening browser 'firefox' to base url 'https://training-wheels-protocol.herokuapp.com'.</msg>
+<msg timestamp="20211016 22:46:58.210" level="INFO">Firefox driver log is always forced to to: /Users/julianaantunesmachado/GitHub/qaninja-robot/web/log/select/geckodriver-2.log</msg>
+<status status="PASS" starttime="20211016 22:46:58.209" endtime="20211016 22:47:07.507"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211016 22:47:09.509" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211016 22:47:07.507" endtime="20211016 22:47:09.510"/>
+</kw>
+<status status="PASS" starttime="20211016 22:46:58.208" endtime="20211016 22:47:09.510"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}/dropdown</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211016 22:47:09.512" level="INFO">Opening url 'https://training-wheels-protocol.herokuapp.com/dropdown'</msg>
+<status status="PASS" starttime="20211016 22:47:09.511" endtime="20211016 22:47:09.863"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>id:dropdown</arg>
+<arg>6</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20211016 22:47:09.864" level="INFO">Selecting options from selection list 'id:dropdown' by value 6.</msg>
+<status status="PASS" starttime="20211016 22:47:09.863" endtime="20211016 22:47:10.160"/>
+</kw>
+<kw name="Get Selected List Label" library="SeleniumLibrary">
+<var>${option-selected}</var>
+<arg>id:dropdown</arg>
+<doc>Returns the label of selected option from selection list ``locator``.</doc>
+<msg timestamp="20211016 22:47:10.251" level="INFO">${option-selected} = Loki</msg>
+<status status="PASS" starttime="20211016 22:47:10.160" endtime="20211016 22:47:10.251"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${option-selected}</arg>
+<arg>Loki</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20211016 22:47:10.251" endtime="20211016 22:47:10.252"/>
+</kw>
+<kw name="Close Session" library="base" type="TEARDOWN">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211016 22:47:12.255" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211016 22:47:10.253" endtime="20211016 22:47:12.256"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211016 22:47:12.433" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211016 22:47:12.257" endtime="20211016 22:47:12.433"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211016 22:47:12.434" endtime="20211016 22:47:13.382"/>
+</kw>
+<status status="PASS" starttime="20211016 22:47:10.253" endtime="20211016 22:47:13.383"/>
+</kw>
+<status status="PASS" starttime="20211016 22:46:58.206" endtime="20211016 22:47:13.383"/>
+</test>
+<status status="PASS" starttime="20211016 22:46:41.211" endtime="20211016 22:47:13.386"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Select">Select</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

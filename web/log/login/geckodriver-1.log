@@ -1,9 +1,10 @@
-1634432144313	geckodriver	INFO	Listening on 127.0.0.1:59864
-1634432144862	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/rp/fxgn8gls6_7_j6q36phn5fz80000gn/T/rust_mozprofilev8hhwr"
-1634432153200	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/rp/fxgn8gls6_7_j6q36phn5fz80000gn/T/rust_mozprofilev8hhwr/search.json.mozlz4", (void 0)))
+1634435326001	geckodriver	INFO	Listening on 127.0.0.1:61629
+1634435326864	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/rp/fxgn8gls6_7_j6q36phn5fz80000gn/T/rust_mozprofileA6qnhU"
+1634435327794	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/rp/fxgn8gls6_7_j6q36phn5fz80000gn/T/rust_mozprofileA6qnhU/search.json.mozlz4", (void 0)))
 console.error: BackgroundUpdate: 
   _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
-1634432156534	Marionette	INFO	Listening on port 59871
-1634432164114	Marionette	INFO	Stopped listening on port 59871
+1634435330367	Marionette	INFO	Listening on port 61636
+1634435330471	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1634435340308	Marionette	INFO	Stopped listening on port 61636
 JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]

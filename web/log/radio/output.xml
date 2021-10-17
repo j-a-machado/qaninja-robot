@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on darwin)" generated="20211016 22:47:28.090" rpa="false" schemaversion="2">
+<suite id="s1" name="Radio" source="/Users/julianaantunesmachado/GitHub/qaninja-robot/web/tests/radio.robot">
+<test id="s1-t1" name="Radio button with id">
+<kw name="Open Session" library="base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211016 22:47:28.442" level="INFO">Opening browser 'firefox' to base url 'https://training-wheels-protocol.herokuapp.com'.</msg>
+<msg timestamp="20211016 22:47:28.445" level="INFO">Firefox driver log is always forced to to: /Users/julianaantunesmachado/GitHub/qaninja-robot/web/log/radio/geckodriver-1.log</msg>
+<status status="PASS" starttime="20211016 22:47:28.441" endtime="20211016 22:47:41.186"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211016 22:47:43.188" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211016 22:47:41.187" endtime="20211016 22:47:43.188"/>
+</kw>
+<status status="PASS" starttime="20211016 22:47:28.440" endtime="20211016 22:47:43.189"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}/radios</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211016 22:47:43.190" level="INFO">Opening url 'https://training-wheels-protocol.herokuapp.com/radios'</msg>
+<status status="PASS" starttime="20211016 22:47:43.189" endtime="20211016 22:47:44.504"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>movies</arg>
+<arg>cap</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20211016 22:47:44.505" level="INFO">Selecting 'cap' from radio button 'movies'.</msg>
+<status status="PASS" starttime="20211016 22:47:44.504" endtime="20211016 22:47:44.783"/>
+</kw>
+<kw name="Radio Button Should Be Set To" library="SeleniumLibrary">
+<arg>movies</arg>
+<arg>cap</arg>
+<doc>Verifies radio button group ``group_name`` is set to ``value``.</doc>
+<msg timestamp="20211016 22:47:44.785" level="INFO">Verifying radio button 'movies' has selection 'cap'.</msg>
+<status status="PASS" starttime="20211016 22:47:44.784" endtime="20211016 22:47:44.811"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211016 22:47:49.813" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211016 22:47:44.812" endtime="20211016 22:47:49.813"/>
+</kw>
+<kw name="Close Session" library="base" type="TEARDOWN">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211016 22:47:51.818" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211016 22:47:49.816" endtime="20211016 22:47:51.819"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211016 22:47:52.042" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211016 22:47:51.819" endtime="20211016 22:47:52.042"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211016 22:47:52.042" endtime="20211016 22:47:52.939"/>
+</kw>
+<status status="PASS" starttime="20211016 22:47:49.814" endtime="20211016 22:47:52.939"/>
+</kw>
+<tag>radio</tag>
+<status status="PASS" starttime="20211016 22:47:28.439" endtime="20211016 22:47:52.940"/>
+</test>
+<test id="s1-t2" name="Radio button with value">
+<kw name="Open Session" library="base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211016 22:47:52.944" level="INFO">Opening browser 'firefox' to base url 'https://training-wheels-protocol.herokuapp.com'.</msg>
+<msg timestamp="20211016 22:47:52.945" level="INFO">Firefox driver log is always forced to to: /Users/julianaantunesmachado/GitHub/qaninja-robot/web/log/radio/geckodriver-2.log</msg>
+<status status="PASS" starttime="20211016 22:47:52.943" endtime="20211016 22:48:01.306"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211016 22:48:03.308" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211016 22:48:01.307" endtime="20211016 22:48:03.308"/>
+</kw>
+<status status="PASS" starttime="20211016 22:47:52.943" endtime="20211016 22:48:03.309"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}/radios</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211016 22:48:03.310" level="INFO">Opening url 'https://training-wheels-protocol.herokuapp.com/radios'</msg>
+<status status="PASS" starttime="20211016 22:48:03.309" endtime="20211016 22:48:04.339"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>movies</arg>
+<arg>guardians</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20211016 22:48:04.343" level="INFO">Selecting 'guardians' from radio button 'movies'.</msg>
+<status status="PASS" starttime="20211016 22:48:04.340" endtime="20211016 22:48:04.703"/>
+</kw>
+<kw name="Radio Button Should Be Set To" library="SeleniumLibrary">
+<arg>movies</arg>
+<arg>guardians</arg>
+<doc>Verifies radio button group ``group_name`` is set to ``value``.</doc>
+<msg timestamp="20211016 22:48:04.704" level="INFO">Verifying radio button 'movies' has selection 'guardians'.</msg>
+<status status="PASS" starttime="20211016 22:48:04.704" endtime="20211016 22:48:04.750"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211016 22:48:09.752" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211016 22:48:04.751" endtime="20211016 22:48:09.752"/>
+</kw>
+<kw name="Close Session" library="base" type="TEARDOWN">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211016 22:48:11.755" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211016 22:48:09.754" endtime="20211016 22:48:11.756"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211016 22:48:11.972" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211016 22:48:11.756" endtime="20211016 22:48:11.972"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211016 22:48:11.973" endtime="20211016 22:48:12.779"/>
+</kw>
+<status status="PASS" starttime="20211016 22:48:09.753" endtime="20211016 22:48:12.780"/>
+</kw>
+<tag>radio</tag>
+<status status="PASS" starttime="20211016 22:47:52.941" endtime="20211016 22:48:12.780"/>
+</test>
+<status status="PASS" starttime="20211016 22:47:28.091" endtime="20211016 22:48:12.783"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">radio</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Radio">Radio</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
